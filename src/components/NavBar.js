@@ -2,11 +2,11 @@ import React from "react";
 import bar from "../assets/bars-solid.svg"
 
 function NavBar() {
-  return <nav className="nav">
+  return <nav className="navbar">
     <a className="port" href="/"> Portfolio</a>
     <div className="menu"> 
-    <img alt="bar" src={bar}/>
-        <ul>
+    <img className="bar" alt="bar" src={bar}/>
+        <ul >
             <li><a href="#about"> About </a></li>
             <li><a href="#skills"> Skills </a></li>
             <li><a href="#projects"> Projects </a></li>
