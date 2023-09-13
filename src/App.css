@@ -33,7 +33,7 @@
   display: flex;
 }
 
-.menu ul {
+.items {
   list-style: none;
   display: flex;
   gap: 47px;
@@ -71,7 +71,7 @@
     display: block;
   }
 
-  .menu ul{
+  .items{
     flex-direction: column;
     align-items: center;
     display: none;
@@ -81,5 +81,10 @@
     background: linear-gradient(0deg, rgba(25, 55, 109, 0.2)0%, rgba(25, 55, 109, 100%));
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     padding: 24px 33px;
+  }
+
+  .myMenuOpen{
+    z-index: 1;
+    display: flex;
   }
 }
