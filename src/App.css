@@ -77,6 +77,7 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  /* background-clip: border-box; */
 }
 
 .content p{
@@ -106,6 +107,7 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: floating;
+  
 }
 
 @keyframes floating {
@@ -116,8 +118,37 @@
     transform: translate(0, 10px);
   }
   100%{
-    transform: translate(0, -10px);
+    transform: translate(0, -0px);
   }
+}
+
+.topBlur{
+  height: 50vw;
+  width: 50vw;
+  min-width: 350px;
+  min-height: 350px;
+  top: -128px;
+  left: -10vh;
+  border: 764px;
+  position: absolute;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.bottomBlur{
+  height: 50vw;
+  right: -25vh;
+  width: 70vw;
+  min-width: 250px;
+  min-height: 350px;
+  top: 246px;
+  left: 10vh;
+  border-radius: 764px;
+  position: absolute;
+  background: rgba(25, 55, 109, 0.7);
+  filter: blur(100px);
+  z-index: 0;
 }
 
 @media screen and (max-width: 830px) {
@@ -154,7 +185,7 @@
     padding: 24px 33px;
   }
 
-  .menuOpen{
+  .openMenu{
     z-index: 1;
     display: flex;
     margin-top: 10%;
