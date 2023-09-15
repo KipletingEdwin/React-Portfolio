@@ -9,7 +9,7 @@ function NavBar() {
     <a className="port" href="/"> Portfolio</a>
     <div className="menu"> 
     <img className="bar" alt="bar" src={ openMenu ? xbar : bar}  onClick={() => setOpenMenu(!openMenu)}/>
-        <ul className = { `{items} ${openMenu ? "myMenuOpen" : ""}`} >
+        <ul className = {`${"submenu"} ${ openMenu && "menuOpen"}`} >
             <li><a href="#about"> About </a></li>
             <li><a href="#skills"> Skills </a></li>
             <li><a href="#projects"> Projects </a></li>
