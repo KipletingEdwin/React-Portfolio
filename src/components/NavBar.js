@@ -8,8 +8,8 @@ function NavBar() {
   return <nav className="navbar">
     <a className="port" href="/"> Portfolio</a>
     <div className="menu"> 
-    <img className="bar" alt="bar" src={ openMenu ? xbar : bar}  onClick={() => setOpenMenu(!openMenu)}/>
-        <ul className = {`${"submenu"} ${ openMenu && "menuOpen"}`} >
+    <img className="bar" alt="bar" src={ openMenu ? xbar : bar}  onClick={() => setOpenMenu(!openMenu)} />
+        <ul className = {`${"submenu"} ${ openMenu && "menuOpen"}`} onClick={() =>setOpenMenu(false)}  >
             <li><a href="#about"> About </a></li>
             <li><a href="#skills"> Skills </a></li>
             <li><a href="#projects"> Projects </a></li>
