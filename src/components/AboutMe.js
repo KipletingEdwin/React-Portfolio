@@ -1,13 +1,14 @@
 import React from 'react'
 import cursor from '../assets/icons8-cursor-50.png'
 import server from '../assets/icons8-server-50.png'
+import ed from '../assets/ed.jpg'
 
 function AboutMe() {
   return (
     <section className='myContainer'>
         <h2> About</h2>
         <div className='myContent'>
-            <img src='' alt='me'/>
+            <img src={ed} alt='me'/>
             <ul>
                 <li>
                     <img src={cursor} alt='else me'/>
