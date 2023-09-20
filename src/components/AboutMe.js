@@ -5,7 +5,7 @@ import ed from '../assets/ed.jpg'
 
 function AboutMe() {
   return (
-    <section className='myContainer'>
+    <section className='myContainer' id='about'>
         <h2> About</h2>
         <div className='myContent'>
             <img src={ed} alt='me'/>
