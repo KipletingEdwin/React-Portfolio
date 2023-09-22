@@ -5,7 +5,7 @@
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -53,7 +53,7 @@ html{
   height: 50px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,10 +62,9 @@ html{
   margin-right: 10%;
   margin-top: 49px;
   z-index: 1;
-
 }
 
-.content{
+.content {
   flex-direction: column;
   align-items: flex-start;
   display: flex;
@@ -73,26 +72,29 @@ html{
   color: #fff;
 }
 
-.content h1{
+.content h1 {
   font-weight: 900;
   font-size: 72px;
   margin-bottom: 33px;
   font-family: "roboto";
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 0) 120%
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  
+
   /* background-clip: border-box; */
 }
 
-.content p{
+.content p {
   margin-left: 52px;
   font-family: "roboto";
   font-size: 30px;
-  
 }
 
-.contactbtn{
+.contactbtn {
   background-color: #576cbc;
   text-decoration: none;
   border-radius: 100px;
@@ -103,45 +105,43 @@ html{
   color: white;
 }
 
-.container img{
+.container img {
   z-index: 1;
   width: 50%;
- 
- 
+
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: floating;
-  
 }
 
 @keyframes floating {
-  0%{
+  0% {
     transform: translate(0, 0px);
   }
-  50%{
+  50% {
     transform: translate(0, 10px);
   }
-  100%{
+  100% {
     transform: translate(0, -0px);
   }
 }
 
-.topBlur{
+.topBlur {
   height: 50vw;
   width: 50vw;
   min-width: 350px;
   min-height: 350px;
   top: -128px;
   left: -10vh;
-  border-radius: 764px; 
+  border-radius: 764px;
   position: absolute;
   background: rgba(25, 55, 109, 0.7);
   filter: blur(100px);
   z-index: 0;
 }
 
-.bottomBlur{
+.bottomBlur {
   height: 50vw;
   right: -25vh;
   width: 70vw;
@@ -156,17 +156,16 @@ html{
   z-index: 0;
 }
 
-.myContainer{
+.myContainer {
   background-color: rgba(12, 12, 12, 0.6);
   padding: 73px;
   position: relative;
   margin: 129px 10% 0 10%;
   border-radius: 15px;
   z-index: 1;
-
 }
 
-.myContainer h2{
+.myContainer h2 {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700px;
@@ -174,25 +173,24 @@ html{
   letter-spacing: 1.75px;
 }
 
- .myContent {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-  }
+.myContent {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
 
-
-.myContent img{
+.myContent img {
   width: 35%;
 }
 
-.myContent ul{
+.myContent ul {
   display: flex;
   color: #fff;
   gap: 50px;
   flex-direction: column;
 }
 
-.myContent ul li{
+.myContent ul li {
   padding: 25px;
   list-style: none;
   display: flex;
@@ -200,40 +198,35 @@ html{
   background-size: 0 100%;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(90deg, rgba(165, 215, 232, 0.42) 0%, rgba(255,255,255,0) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   background-repeat: no-repeat;
   transition: 0.5s;
-
 }
 
-.myContent ul li:hover{
+.myContent ul li:hover {
   background-size: 100% 100%;
-
 }
 
-.myContent ul li h3{
+.myContent ul li h3 {
   font-weight: 600px;
   font-size: 25px;
-
 }
 
-.myContent ul li p{
+.myContent ul li p {
   font-size: 25px;
 }
 
-
-
-
-
-
-
 @media screen and (max-width: 830px) {
-  .nav{
+  .nav {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .menu{
+  .menu {
     flex-direction: column;
     align-items: flex-end;
     right: 0;
@@ -241,10 +234,9 @@ html{
     position: absolute;
     z-index: 3;
     gap: 11px;
-
   }
 
-  .bar{
+  .bar {
     cursor: pointer;
     display: block;
   }
@@ -256,54 +248,53 @@ html{
     gap: 13px;
     background: rgb(25, 55, 109);
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(25, 55, 109, 0.2)0%, rgba(25, 55, 109,1) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     padding: 24px 33px;
   }
 
-  .openMenu{
+  .openMenu {
     z-index: 1;
     display: flex;
     margin-top: 10%;
   }
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 830px) {
   .content {
     align-items: center;
   }
 
-  .container{
+  .container {
     flex-direction: column-reverse;
   }
-
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 830px) {
   .myContainer {
     padding-left: 0;
-  padding-right: 0;
-  background-color: transparent;
+    padding-right: 0;
+    background-color: transparent;
   }
 
-  .myContent{
+  .myContent {
     flex-direction: column;
   }
 
-  .myContent img{
+  .myContent img {
     display: none;
   }
 
-  .myContent ul{
+  .myContent ul {
     margin-top: 29px;
   }
 
-  .myContent ul li{
+  .myContent ul li {
     padding-left: 0;
     padding-right: 0;
   }
-  
 }
-
-
-

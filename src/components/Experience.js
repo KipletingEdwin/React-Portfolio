@@ -1,5 +1,6 @@
 import React from 'react'
 import skills from '../data/skills.json'
+import history from '../data/history.json'
 
 function Experience() {
   return (
@@ -11,11 +12,31 @@ function Experience() {
                     return <div key={id}>
                         <div> <img src={skill.imageSrc}  alt={skill.title}/> </div>
 
+                        <p>{skill.title}</p>
+
                     </div>
+                   
                 })
                 } </div>
-            <ul></ul>
+            <ul>
+                {
+                    history.map((historyItem, id) =>{
+                        return <li key={id}> 
+                        <img src={historyItem.imageSrc} alt={`${historyItem.organisation} Logo`} />
+                        <div> 
+                            <h3>{`${historyItem.role}, ${historyItem.organisation}`} </h3>
+                            <p> {`${historyItem.startDate} - ${historyItem.endDate}`}  </p>
+                            <ul> 
+                                {historyItem.experiences.map(( experience, id) =>{
+                                return <li key={id}> {experience} </li>;
+                            })} </ul>
+                        </div>
+                        </li>
+                    })
+                }
+            </ul>
         </div>
+        
 
 
     </section>
