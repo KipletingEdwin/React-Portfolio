@@ -298,3 +298,77 @@ html {
     padding-right: 0;
   }
 }
+
+.exContainer{
+  color: #fff;
+  margin: 79px 10% 0px 10%;
+}
+
+.exContainer h2{
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  font-size: 35px;
+}
+
+.exContent{
+  flex-direction: row;
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skillSection{
+  display: flex;
+  width: 45%;
+  gap: 37px;
+  flex-wrap: wrap;
+}
+
+.skill{
+  flex-direction: column;
+  gap: 11px;
+  align-items: center;
+  display: flex;
+}
+
+.myImageContainer{
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 100%;
+  background-color: #19376d;
+}
+
+.myImageContainer img{
+  width: 75px;
+}
+
+.skill p{
+  font-weight: 500;
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+
+.exContainer ul{
+  gap: 40px;
+  flex-direction: column;
+  display: flex;
+  width: 45%;
+}
+
+.exContainer ul li{
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  padding: 24px;
+}
+
+
