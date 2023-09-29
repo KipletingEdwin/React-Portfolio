@@ -1,10 +1,13 @@
 import React from "react";
 import skills from "../data/skills.json";
 import history from "../data/history.json";
+// import j from "../assets/js.png"
 
 function Experience() {
   return (
+    
     <section id="experience" className="exContainer" >
+      {/* <img src={j} alt="hey"/> */}
       <h2> Experience </h2>
       <div className="exContent" >
         <div className="skillSection" >
