@@ -13,6 +13,7 @@ html {
   width: 100%;
   height: 100%;
   /* color: white; */
+  overflow: hidden;
   background-color: #04152d;
 }
 
@@ -422,5 +423,84 @@ html {
   margin-top: 76px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.projectContainer h2{
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1.75px;
+}
+
+.projects{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 37px;
+}
+
+.myProjectContainer{
+  flex-direction: column;
+  border-radius: 10px;
+  display: flex;
+  max-width: 345px;
+  padding: 18px 24px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a52 100%);
+  box-shadow: 0 16px 14px 0   #04152d;
+}
+
+.myProjectContainer img{
+  margin-bottom: 26px;
+}
+
+.myProjectContainer h3{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.myProjectContainer p{
+  font-weight: 400;
+  margin-top: 6px;
+  font-size: 25px;
+}
+
+.myProjectContainer ul{
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+  margin-top: 14px;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.myProjectContainer ul li{
+  padding: 25px;
+  font-weight: 400;
+  font-size: 25px;
+  border-radius: 100px;
+  background: #0b2447;
+}
+
+.myLinks{
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  margin-top: 26px;
+}
+
+.myLinks a{
+  background: #576cbc;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding: 1px 22px;
+  border-radius: 100px;
+  text-decoration: none;
 }
 
