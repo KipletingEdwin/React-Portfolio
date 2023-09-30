@@ -1,6 +1,6 @@
 import React from 'react'
-import cursor from '../assets/icons8-cursor-50.png'
-import server from '../assets/icons8-server-50.png'
+import cursor from '../assets/cursorIcon.png'
+import server from '../assets/serverIcon.png'
 import ed from '../assets/ed.jpg'
 
 function AboutMe() {

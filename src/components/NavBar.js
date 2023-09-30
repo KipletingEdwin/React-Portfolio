@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import bar from "../assets/bars-solid.svg"
-import xbar from "../assets/xmark-solid.svg"
+import bar from "../assets/menuIcon.png"
+import xbar from "../assets/closeIcon.png"
 
 function NavBar() {
 
