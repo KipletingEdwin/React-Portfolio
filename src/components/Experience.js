@@ -17,7 +17,7 @@ function Experience() {
               <div key={id} className="skill" >
                 <div className="myImageContainer" >
                   {" "}
-                  <img src={skill.imageSrc} alt={skill.title} />{" "}
+                  <img src={skill.imageSrc} alt={skill.title} /> 
                 </div>
 
                 <p>{skill.title}</p>
@@ -25,10 +25,10 @@ function Experience() {
             );
           })}{" "}
         </div>
-        <ul>
+        <ul className="history">
           {history.map((historyItem, id) => {
             return (
-              <li key={id}>
+              <li key={id} className="historyItem" >
                 <img
                   src={historyItem.imageSrc}
                   alt={`${historyItem.organisation} Logo`}

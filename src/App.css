@@ -353,14 +353,14 @@ html {
   font-family: 'Roboto';
 }
 
-.exContainer ul{
+.history{
   gap: 40px;
   flex-direction: column;
   display: flex;
   width: 45%;
 }
 
-.exContainer ul li {
+.historyItem {
   background: #19376d;
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   padding: 24px;
@@ -411,7 +411,7 @@ html {
     flex-direction: column;
   }
 
-  .exContainer ul li {
+  .historyItem {
     gap: 9px;
     width: 100%;
   }

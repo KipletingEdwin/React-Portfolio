@@ -10,7 +10,7 @@
     },
     {
       "title": "JavaScript",
-      "imageSrc": "..assets/js.png"
+      "imageSrc": "../assets/js.png"
     },
     {
       "title": "React",

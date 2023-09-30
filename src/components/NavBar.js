@@ -11,7 +11,7 @@ function NavBar() {
     <img className="bar" alt="bar" src={ openMenu ? xbar : bar}  onClick={() => setOpenMenu(!openMenu)} />
         <ul className = {`${"submenu"} ${ openMenu && "openMenu"}`} onClick={() =>setOpenMenu(false)}  >
             <li><a href="#about"> About </a></li>
-            <li><a href="#skills"> Skills </a></li>
+            <li><a href="#experience"> Skills </a></li>
             <li><a href="#projects"> Projects </a></li>
             <li><a href="#contact"> Contact </a></li>
         </ul>

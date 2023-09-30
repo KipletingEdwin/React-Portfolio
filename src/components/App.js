@@ -3,6 +3,7 @@ import About from './About';
 import AboutMe from './AboutMe';
 import Experience from './Experience';
 import NavBar from './NavBar';
+import Projects from './Projects';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <AboutMe/>
       <Experience/>
+      <Projects/>
     </div>
   );
 }
