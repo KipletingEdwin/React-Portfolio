@@ -1,8 +1,11 @@
 import React from 'react'
+import email from '../assets/email.png'
+import linkedin from '../assets/linkedIn.png'
+import github from '../assets/github.png'
 
 function Contact() {
-  return ( <footer>
-    <div> 
+  return ( <footer id='contact' className='footerContainer'>
+    <div className='myText'> 
         <h2> Contact </h2>
         <p> Feel free to react out!</p>
     </div>
